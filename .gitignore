@@ -5,7 +5,7 @@ target/
 !**/src/test/**/target/
 
 .DS_Store
-**/src/**/application-local.properties
+**/**/src/main/**/application-local.properties
 
 ### STS ###
 .apt_generated
