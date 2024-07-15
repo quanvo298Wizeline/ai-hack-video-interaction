@@ -13,15 +13,6 @@ public class PromptUtils {
       Answer the question '${question}' based on summarizing the preceding frame answers.
       """;
 
-  /*public static String createFrameExplanationList(List<Document> documents) {
-    AtomicInteger counter = new AtomicInteger(1);
-    return documents.stream()
-        .map(
-            document ->
-                "Frame " + counter.getAndIncrement() + ": \"" + document.getContent() + "\"")
-        .collect(Collectors.joining("\n"));
-  }*/
-
   public static String createAnswersPrompt(String question, Document document) {
     Map<String, String> values =
         Map.of("frameExplanationList", document.getContent(), "question", question);
