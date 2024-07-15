@@ -21,7 +21,7 @@ description, and presented to the user.
 
 ### Prepare
 
-- Copy from application-ollama.yaml and rename to application-local.yaml
+- Copy from src/main/resources/application-ollama.properties and rename to application-local.properties
 - Replace aivideo.aws.region, aivideo.aws.s3Bucket, aivideo.aws.accessKey and aivideo.aws.secretKey properties
 - Setup Docker
 
